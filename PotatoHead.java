@@ -57,6 +57,20 @@ public class PotatoHead
     { 
         noseColor = z; 
     }
+    public void talk(){
+        System.out.println("My name is Schmerenc Schmadasz");
+    }
+    public String amICool(boolean x){
+        if (x){
+            return "I am cool";
+        }
+        else{
+            return "I am not cool";
+        }
+    }
+    public void curse(){
+        System.out.println("Ḫ̴̡̧̬͇̘̝̘̣̼̎͆̈́̍̊̉̅̓̃̓̀̒ȩ̷̢̢̨̛͈͉͙̞̩̣̜͎̭̲̟̻̠͛͑́̍̌̈́̽̌͊͠l̴̼͐̈́̐̅͑̈́̈́͘͝ḻ̵̛̖̯̘̼̣͂̐̋̐̂ǫ̸͔̘͖̲̣̞̥̭̖̦͓̟͇̠̀̊̑̿͐͊̂̌̍̓͝ͅ ̸̨͓̜͙̩͎͎̣̖͔̼͇̖͓̜͊͌͛̈́I̵̛̬̰̦̝̫͚͔͙̗͎̝̻̱̋́́ ̷̡͙̜̲̻̭͎̪͚͂ͅa̵̙͋̽͑̀̍͗̎̎͘m̵̹̟̲̣̭̼̣̬̙̲̼̮̰̮̍͌̇͊ ̸̩̯̬̞̺̫̺̼̻̝̗͒̄̆͂͠ͅă̷̛͔͙̙̥͖̬͍͔̈́͐́̉̇̆̀̾̈́͗̕͜ͅl̶̨͍͎̜̯̻̟̳̬̭̗̫̬̘̻͆̀́̈́͆̈́̒̇ͅͅi̴͈͇͐̆͆v̶͓͈̰͈̩̞̞̭̬̂e̸̛͍̞̤̙̞̖̣͈̖̪̲̭͐͗̉́̾̐̎̏͛̎͝͝ͅ,̶͙͙̦̩̣̖̠͖͓̥͊̎̈́͋͐̌̍̃̀͗̍͊̀͊̕̕ ̸̡̖̰̱̠͊̀́̊H̵̨͍̩̥̣̤̰̙͖̟̥̩̅̒̀̃̾̽́̐̈́̽̔̀̓̐͗̚È̸̤̇̂͋̂͠L̸̡̡̠̝̝͇̩̞̤̗̥͎͎̮̭͍̓̈́͒̄̏̅̐̑̀͠P̷̘̍̊͐͑́̃ ̶̛͇̉̎̐̎̏́̊͋͆̕M̸̧̯̭̦͓̫̲̳͙̫̅̐E̸̢̳͊̎̈̏̉̽͐͝");
+    }
     public String toString() 
     { 
         return "The color of my ears is " + earColor + ". The number of arms is " + numberOfArms + ". The fact that I'm wearing glasses is " + glasses + ". The color of my nose is " + noseColor + "."; 
@@ -71,5 +85,8 @@ public class PotatoHead
         object.setnoseColor("black");
         String nose = object2.getnoseColor();
         System.out.println(object2.toString());
+        object.talk();
+        System.out.println(object.amICool(true));
+        object.curse();
     } 
 }
